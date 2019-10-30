@@ -2,7 +2,7 @@ package intoduction
 
 fun main() {
 
-//    val cond ="Take it easy and enjoy life!"
+/**   val cond ="Take it easy and enjoy life!"
 //    for(i in 1..10){
 //        val str =getFortuneCookie();
 //        println(str)
@@ -10,8 +10,9 @@ fun main() {
 //            return
 //        }
 //    }
+**/
     var fortune: String
-    for (i in 1..10) {
+    for (i in 1..2) {
         fortune = getFortuneCookie(getBirthday())
         println("\nYour fortune is: $fortune")
         if (fortune.contains("Take it easy")) break
@@ -27,7 +28,17 @@ fun getFortuneCookie(birthday : Int) : String{
 //    if (birthday==null){
 //        birthday=1;
 //    }
-    return fortunes[(birthday.rem(fortunes.size))]
+    /**
+     * return birthday based on the remainder ...
+     */
+    //return fortunes[(birthday.rem(fortunes.size))]
+    val index = when (birthday) {
+        in 1..7 -> 4
+        28, 31 -> 2
+        else -> birthday.rem(fortunes.size)
+    }
+    return fortunes[index]
+
 }
 fun getBirthday(): Int{
     print("To know your fortune, enter your birthday: ")
