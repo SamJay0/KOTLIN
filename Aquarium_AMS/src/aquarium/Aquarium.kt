@@ -12,5 +12,3 @@ open class Aquarium(var length:Int=20, var height:Int=30, var width:Int= 40) {
         return width*height*length/100
     }
 }
-
-class
