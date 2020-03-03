@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 @file:JvmName("myApp")
+=======
+>>>>>>> 0462160bfc1eff3770564886c61711d8d7d85b02
 package recap
 
 import kotlin.math.absoluteValue

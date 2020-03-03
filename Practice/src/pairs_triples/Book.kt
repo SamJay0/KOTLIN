@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 //change the name of the class that contains top-level functions for a particular file
 @file:JvmName("myBook")
+=======
+>>>>>>> 0462160bfc1eff3770564886c61711d8d7d85b02
 package pairs_triples
 
 import java.time.Year
